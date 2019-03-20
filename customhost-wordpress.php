@@ -6,10 +6,8 @@ Author: Eyedo
 */
 
 
-
-add_action('wp_enqueue_scripts',function(){
-
-  wp_register_style('custom-style',plugins_url('assets/main.css',__FILE__),'1.0');
-  wp_enqueue_style('custom-style');
-
-},100);
+function my_custom_styles() {
+  wp_register_style( 'custom-styles',plugins_url('assets/main.css',__FILE__));
+  wp_enqueue_style( 'custom-styles' );
+}
+add_action( 'wp_enqueue_scripts', 'my_custom_styles' , 100);
