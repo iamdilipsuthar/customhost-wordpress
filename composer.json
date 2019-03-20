@@ -1,0 +1,5 @@
+{
+    "name": "customhost/wordpress",
+    "type": "wordpress-plugin",
+    "require": {}
+}
