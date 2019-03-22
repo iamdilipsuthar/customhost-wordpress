@@ -1,4 +1,14 @@
 jQuery(document).ready(function($){
-  $('.beta.site-title').hide(500);
-  console.log('loaded');
+
+
+  $.ajax({
+    url:customhost.ajaxurl,
+    method:'POST',
+    data:{
+      action:'my_ajax_action'
+    },
+    success:function(data){
+      console.log(data);
+    }
+  });
 });
