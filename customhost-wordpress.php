@@ -42,21 +42,6 @@ function my_ajax_action(){
   die();
 }
 
-add_shortcode('mycode',function(){
-  echo '<div class="error"><p>';
-  	printf(
-  		/* Translators: %1$s is the install command, %2$s is the build command, %3$s is the watch command. */
-  		esc_html__( 'WooCommerce Blocks development mode requires files to be built. From the plugin directory, run %1$s to install dependencies, %2$s to build the files or %3$s to build the files and watch for changes.', 'woo-gutenberg-products-block' ),
-  		'<code>npm install</code>',
-  		'<code>npm run build</code>',
-  		'<code>npm start</code>'
-  	);
-  	echo '</p></div>';
-    die();
-
-});
-
-
 // Duplication of post type
 function create_event_posttype(){
   $post_args = array(
