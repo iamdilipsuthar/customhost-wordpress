@@ -42,6 +42,8 @@ function my_ajax_action(){
   die();
 }
 
+
+
 // Duplication of post type
 function create_event_posttype(){
   $post_args = array(
