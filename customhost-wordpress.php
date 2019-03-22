@@ -69,6 +69,10 @@ add_filter('post_row_actions',function($actions,$post){
   return $actions;
 },2,10);
 
+
+
+
+
 add_action( 'admin_post_dup_event', 'duplicate_event' );
 function duplicate_event(){
   $nonce = $_REQUEST['_wpnonce'];
